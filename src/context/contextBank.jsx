@@ -6,15 +6,14 @@ export const ProductContext = createContext();
 const ProductProvider = ({ children }) => {
   const [productsData, setProductsData] = useState([]);
 
+
   useEffect(() => {
-    axios.get("http://localhost:3005/product")
-      .then((result) => {
-        setProductsData(Array.isArray(result.data) ? result.data : []);
-      })
-      .catch((error) => {
-        console.error("Error fetching products data:", error);
-        setProductsData([]);
-      });
+    const getData = async()=>{
+    fetch('http://localhost:3005/results')
+            .then(res=>res.json())
+            .then(json=>setProductsData(json))
+    }
+    getData() 
   }, []);
 
   return (

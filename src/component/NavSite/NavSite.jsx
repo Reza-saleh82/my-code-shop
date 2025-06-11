@@ -29,13 +29,13 @@ function NavSite() {
         </div>
         <div className={`boxLink ${showMobileMenu ? 'mobile-menu-active' : ''}`}>
           <div>
-            <NavLink className="link-nav" to='/'>فروشگاه</NavLink>
+            <NavLink style={{color:'blue'}} className="link-nav" to='/'>Rick and Morty</NavLink>
           </div>
           <div>
-            <NavLink className="link-nav" to='/AboutUs'>درباره ما</NavLink>
+            <NavLink className="link-nav" to='/AboutUs'>About Us</NavLink>
           </div>
           <div>
-            <NavLink className="link-nav" to='/Login'>ورود/ثبت نام</NavLink>
+            <NavLink className="link-nav" to='Login'>Login</NavLink>
           </div>
         </div>
       </Container>

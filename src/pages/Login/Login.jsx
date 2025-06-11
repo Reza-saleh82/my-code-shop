@@ -4,7 +4,6 @@ import NavSite from "../../component/NavSite/NavSite";
 function Login() {
   return (
     <div>
-      <NavSite />
       <div style={{ marginTop: '100px' }}>
         <Container fluid="md">
           <h1>Login</h1>
